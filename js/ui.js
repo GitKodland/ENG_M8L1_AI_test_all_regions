@@ -18,29 +18,29 @@ function renderLeft() {
 
   if (state.step === 1) {
     imgs = [
-      [IMAGES.red, "Красный"],
-      [IMAGES.blue, "Синий"],
-      [IMAGES.toy, "С брелком"]
+      [IMAGES.red, "Red"],
+      [IMAGES.blue, "Blue"],
+      [IMAGES.toy, "With a charm"]
     ];
   }
 
   if (state.step === 2 || state.step === 4) {
-    imgs = [[IMAGES.black, "Тест"]];
+    imgs = [[IMAGES.black, "Test"]];
   }
 
   if (state.step === 3) {
     imgs = [
-      [IMAGES.red,"Красный"],
-      [IMAGES.blue,"Синий"],
-      [IMAGES.toy,"С брелком"],
-      [IMAGES.black,"Чёрный"],
-      [IMAGES.sport,"Спорт"],
-      [IMAGES.kid,"Детский"]
+      [IMAGES.red,"Red"],
+      [IMAGES.blue,"Blue"],
+      [IMAGES.toy,"With a charm"],
+      [IMAGES.black,"Black"],
+      [IMAGES.sport,"Sports-focused"],
+      [IMAGES.kid,"For children"]
     ];
   }
 
   if (state.step === 5) {
-    imgs = [[IMAGES.bag, "Сумка"]];
+    imgs = [[IMAGES.bag, "A bag"]];
   }
 
   document.getElementById("imageGrid").innerHTML = `
@@ -76,8 +76,8 @@ function renderRight() {
     </div>
 
     <div class="controls">
-      <button class="btn btn-main" id="btnTrain">✨ Действие</button>
-      <button class="btn btn-next" id="btnNext" style="display:none;">Дальше ▶</button>
+      <button class="btn btn-main" id="btnTrain">✨ Action</button>
+      <button class="btn btn-next" id="btnNext" style="display:none;">Next ▶</button>
     </div>
   `;
 }
